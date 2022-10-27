@@ -7,9 +7,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    # Ask user for input
-    a = get_string("Enter your text here: ")
 
-    # Make sure user entered text
-    if a = "":
-        flash("Please enter a text")
+    if method == "GET":
+        # Ask user for input
+        text = request.form.get("text")
+        keyword = request.form.get("keyword")
+
+
+def keyword():
+
+    for i in range(text):
+        if keyword 
