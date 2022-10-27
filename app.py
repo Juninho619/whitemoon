@@ -1,4 +1,3 @@
-from cs50 import get_string
 from flask import Flask, flash
 
 
@@ -26,10 +25,15 @@ def keyword():
         if j == keyword:
             j += 1
             return j
-    
+
+    keyword_density = j * 100 / word_count
 
 
+    if keyword_density > 0.015:
+         # Inform user that he should reduce keyword density
 
+    elif keyword_density < 0.015:
+        # Inform user he should enter more keywords
 
-
-
+    elif keyword_density == 0.015:
+        # Inform user density is correct
