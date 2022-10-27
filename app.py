@@ -17,4 +17,19 @@ def index():
 def keyword():
 
     for i in range(text):
-        if keyword 
+        if i == " ":
+            i += 1
+            word_count = i + 1
+            return word_count
+
+    for j in range(text):
+        if j == keyword:
+            j += 1
+            return j
+    
+
+
+
+
+
+
